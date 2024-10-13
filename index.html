@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Wall Visibility</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h2>Wall Visibility Example</h2>
+
+  <div class="input-container">
+    <input type="number" id="wallCountInput" placeholder="Enter number of walls">
+    <input type="text" id="heightsInput" placeholder="Enter wall heights (e.g., 4#1#2#6#8)">
+    <button onclick="generateBars()">Submit</button>
+  </div>
+
+  <div class="container" id="container">
+    <div class="circle" id="leftVisible">0</div>
+
+    <div class="bar-container" id="bars"></div>
+
+    <div class="circle" id="rightVisible">0</div>
+  </div>
+
+  <div class="footer" id="footer"></div>
+
+  <script src="script.js">
+  </script>
+
+</body>
+</html>
